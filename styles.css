@@ -1,0 +1,566 @@
+/* Style the body */
+body {
+    background-color: #e34f39;
+    width: 98%;
+    max-width: 100%;
+    padding-bottom: 30px;
+    margin: 1%;
+}
+
+header {
+    background-color: #e34f39;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+/* Style the footer */
+footer {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffffff;
+}
+
+h2 {
+    font-size: clamp(1rem, 5vw, 10rem);
+    margin: 0;
+    text-align: center;
+}
+
+h6 {
+    margin: 0;
+}
+
+.headerFlex .mobileMenu,
+.headerFlex .fa-user {
+    display: none;
+}
+
+/* Style the navigation menu */
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 5px #e74e35 solid;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Style the menu items */
+.navBar li {
+    display: inline-block;
+}
+
+/* Style the hyperlinks */
+.navBar a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+/* Change the link colour on hover */
+.navBar a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Highlight the current page */
+.navBar a.active {
+    background-color: #e74e35;
+    color: white;
+    transform: scale(1);
+    border-radius: 10px;
+}
+
+.headerFlex i.active {
+    color: #ffffff;
+}
+
+#colourBlindToggle {
+    display: inline-block; /* Aligns with other inline or inline-block elements */
+    color: black; /* Text color to match other menu items */
+    background-color: #ffffff; /* Background color to match other menu items */
+    text-decoration: none; /* No underlining */
+    font-size: 1.5vw; /* Matches the font size of other nav items */
+    border: none; /* Removes any default browser styling */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+}
+
+#colourBlindToggle:hover {
+    background-color: black; /* Background color for hover state */
+    color: white; /* Text color for hover state */
+    border-radius: 10px; /* Rounded corners for hover state */
+}
+
+/* Create two columns */
+.halfLeft,
+.halfRight {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1%;
+    overflow: hidden;
+}
+footer .halfLeft {
+    border-top: 5px #e74e35 solid;
+    border-right: 5px #e74e35 solid;
+}
+
+footer .halfLeft ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3%;
+    font-size: 50%;
+    list-style-type: none;
+}
+
+.halfLeft a {
+    color: black;
+}
+
+footer .halfRight {
+    border-top: 5px #e74e35 solid;
+    border-left: 5px #e74e35 solid;
+}
+
+.halfRight p {
+    margin: 0;
+    font-size: 50%;
+}
+
+main p {
+    font-size: clamp(1rem, 3vw, 10rem);
+    text-align: center;
+    margin: auto;
+    padding-top: 2%;
+}
+
+.videoContainer {
+    position: relative;
+}
+
+.video {
+    display: block;
+    width: auto;
+    max-width: 45%;
+    height: auto;
+    background: #e34f39;
+    border: 5px solid #e34f39;
+    border-radius: 10px;
+}
+
+.divider {
+    position: relative;
+    width: 5px;
+    background-color: #e34f39; /* Color of the line */
+    height: auto; /* Auto height for the divider */
+    align-self: stretch; /* Center the line if items have different heights */
+    border: 1x solid #e34f39;
+    border-radius: 10px;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    bottom: 0;
+    width: 99vw;
+    height: 5px;
+    background-color: #e34f39;
+    border-radius: 10px;
+}
+
+.homeSection {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(
+        2,
+        1fr
+    ); /* Creates exactly three columns of equal width */
+    row-gap: 1%;
+    column-gap: 2%;
+    border-top: 4px solid #e34f39;
+    border-bottom: 4px solid #e34f39;
+    border-radius: 10px;
+}
+
+.topHomeImage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-65%);
+    border-radius: 10px;
+}
+
+.homeImageLayout {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #e34f39;
+}
+
+.homeImageLayout img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imageTitle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    background-color: #e34f39;
+    padding: 5px 0;
+}
+
+.productRow {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.productRow p {
+    font-size: 2vw;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: solid 1.5vw;
+    border-color: #e34f39;
+}
+
+.productImage {
+    flex: 1;
+    padding-right: 20px;
+    min-width: 35%;
+}
+
+.productImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: solid #e34f39 0.8vw;
+}
+
+.productInfo {
+    flex: 2;
+    text-align: center;
+}
+
+.productPage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productPage button {
+    color: #ffffff;
+    background-color: #e34f39;
+    border-radius: 10px;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.loginContainer h2 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+    border: 4px solid #e34f39;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+form label {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 4px solid #e34f39;
+    border-radius: 10px;
+}
+form button {
+    background-color: #e34f39;
+    color: white;
+    font-size: 2vw;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .headerFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .headerFlex .mobileMenu,
+    .headerFlex .fa-user {
+        display: block;
+        color: #000000;
+        font-size: 7vw;
+    }
+    .headerFlex .fa-user {
+        padding-right: 3vw;
+    }
+    .mobileMenu.active {
+        color: #e34f39;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+    .homeSection {
+        padding: 10px;
+        margin: 1.5%;
+    }
+    .homeImageLayout {
+        border: 3px solid #e34f39;
+    }
+
+    .topHomeImage {
+        width: 30%;
+    }
+    .halfLeft,
+    .halfRight {
+        height: 110px;
+    }
+    .navBar ul {
+        display: none;
+    }
+    .navBar li {
+        display: block;
+        text-align: center;
+    }
+    .navBar.responsive ul {
+        display: block;
+    }
+    .navBar a {
+        font-size: 3vw;
+    }
+    .navBar a[href="login.php"] {
+        display: none;
+    }
+    #colourBlindToggle {
+        font-size: 3vw;
+    }
+    .imgLogo {
+        height: auto;
+        width: 25%;
+        display: inline-flex;
+    }
+    .loginContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .loginContainer h2 {
+        font-size: 7vw;
+    }
+    form {
+        width: 100%;
+    }
+    form label {
+        font-size: 5vw;
+    }
+    form button {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 769px) {
+    .homeSection {
+        padding: 20px;
+        margin: 2%;
+    }
+    .homeImageLayout {
+        border: 4px solid #e34f39;
+    }
+    .topHomeImage {
+        width: 15%;
+    }
+    .halfLeft,
+    .halfRight {
+        height: 150px;
+        font-size: 130%;
+    }
+    .imgLogo {
+        width: 10%;
+    }
+
+    .productImage {
+        padding-right: 50px;
+    }
+}
+
+.boldWord {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #e34f39;
+}
+
+.imgAdvert {
+    width: auto;
+    max-width: 45%;
+    height: auto;
+    border: 4px solid #e34f39;
+    border-radius: 10px;
+}
+
+.mediaContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: auto;
+}
+
+.halfRight p a {
+    text-decoration: none;
+    font-size: 200%;
+}
+
+/* Font awesome styling for mail, facebook, twitter, and instagram icons. */
+.fa-sun {
+    color: #e34f39;
+}
+
+.fab,
+.fas {
+    margin: 5px;
+}
+
+.fa-envelope {
+    color: #e34f39;
+}
+
+.fa-facebook {
+    color: #4267b2;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-instagram {
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Color-blind mode CSS styles */
+.colourBlindMode {
+    background-color: black; /* Gray background for reduced reliance on color */
+    color: #000000; /* High-contrast text color */
+}
+
+.colourBlindMode header,
+.colourBlindMode .halfLeft,
+.colourBlindMode .halfRight,
+.colourBlindMode .video,
+.colourBlindMode .homeImageLayout,
+.colourBlindMode .imgAdvert,
+.colourBlindMode .mediaContainer,
+.colourBlindMode .homeSection {
+    background-color: #ffffff; /* Light background for headers and sections */
+    border-color: #000000; /* High-contrast border color */
+}
+
+.colourBlindMode .loginContainer form,
+.colourBlindMode .loginContainer input {
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+.colourBlindMode .navBar ul {
+    background-color: #ffffff;
+    border: 5px #000000 solid;
+}
+
+.colourBlindMode .imageTitle,
+.colourBlindMode .mobileMenu.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.colourBlindMode .navBar a,
+.colourBlindMode .halfLeft a,
+.colourBlindMode .halfRight p a,
+.colourBlindMode .boldWord {
+    color: #000000; /* High-contrast text color for links and important text */
+}
+
+.colourBlindMode .navBar a:hover,
+.colourBlindMode .loginContainer button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.colourBlindMode .navBar a.active {
+    background: #000000;
+    color: #ffffff;
+    border: 5px #000000 solid;
+}
+
+.colourBlindMode .productPage button {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.colourBlindMode .divider,
+.colourBlindMode .divider::after {
+    background-color: #000000; /* High-contrast divider color */
+}
+
+.colourBlindMode .fa-facebook,
+.colourBlindMode .fa-twitter,
+.colourBlindMode .fa-instagram,
+.colourBlindMode .fa-envelope {
+    /* Use solid colors that have better contrast */
+    color: #000000; /* Fallback color */
+    background: none;
+}

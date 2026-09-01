@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hiking Boots</title>
+        <link rel="icon" type="image/x-icon" href="Media/x-icon.ico" />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            crossorigin="anonymous" />
+        <script defer src="JavaScripts/highlightPage.js"></script>
+        <script defer src="JavaScripts/toggleMenu.js"></script>
+        <script defer src="JavaScripts/colourBlind.js"></script>
+        <script defer src="JavaScripts/productPages.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="headerFlex">
+                <div>
+                    <a href="index.html">
+                        <img
+                            class="imgLogo"
+                            src="Media/Website_Logo.jpg"
+                            alt="York Hiking Logo" />
+                    </a>
+                </div>
+                <a href="login.php"> <i class="fa fa-user"></i></a>
+                <a href="javascript:void(0);" class="mobileMenu">
+                    <i class="fa fa-bars"> </i
+                ></a>
+            </div>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li>
+                        <a href="HBoots.html">Hiking Boots</a>
+                    </li>
+                    <li>
+                        <a href="Coats.html">Coats</a>
+                    </li>
+                    <li>
+                        <a href="Backpacks.html">Backpacks</a>
+                    </li>
+                    <li>
+                        <a href="Tents.html">Tents</a>
+                    </li>
+                    <li>
+                        <a href="login.php">Register/Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="productRow">
+                <div class="product">
+                    <div class="productImage">
+                        <img
+                            src="Media/RuggedBrown.jpg"
+                            alt="Rugged Brown Hiking Boots" />
+                    </div>
+                    <div class="productInfo">
+                        <h2>Rugged Brown</h2>
+                        <p>
+                            A rugged pair of hiking boots, designed to be
+                            suitable for the outdoors.
+                        </p>
+                        <form action="path">
+                            <label for="quantity">Quantity:</label>
+                            <select name="quantity" id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <br />
+                            <input type="submit" value="Add to Basket" />
+                        </form>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <img
+                            src="Media/SturdyOrange.jpg"
+                            alt="Sturdy Orange Hiking Boots" />
+                    </div>
+                    <div class="productInfo">
+                        <h2>Sturdy Orange</h2>
+                        <p>
+                            A sturdy pair of hiking boots, designed to be
+                            suitable for the outdoors.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <img
+                            src="Media/StylishGreen.jpg"
+                            alt="Stylish Green Hiking Boots" />
+                    </div>
+                    <div class="productInfo">
+                        <h2>Stylish Green</h2>
+                        <p>
+                            A stylish pair of hiking boots, designed to be
+                            suitable for the outdoors.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <img
+                            src="Media/SleekGrey.jpg"
+                            alt="Sleek Grey Hiking Boots" />
+                    </div>
+                    <div class="productInfo">
+                        <h2>Sleek Grey</h2>
+                        <p>
+                            A sleek pair of hiking boots, designed to be
+                            suitable for the outdoors.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <img
+                            src="Media/VintageBrown.jpg"
+                            alt="Vintage Brown Hiking Boots" />
+                    </div>
+                    <div class="productInfo">
+                        <h2>Vintage Brown</h2>
+                        <p>
+                            A vintage pair of hiking boots, designed to be
+                            suitable for the outdoors.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="productImage">
+                        <img
+                            src="Media/LightweightWhite.jpg"
+                            alt="Lightweight White Hiking Boots" />
+                    </div>
+                    <div class="productInfo">
+                        <h2>Lightweight White</h2>
+                        <p>
+                            A lightweight pair of hiking boots, designed to be
+                            suitable for the outdoors.
+                        </p>
+                    </div>
+                </div>
+                <!-- Repeat -->
+            </div>
+            <div class="productPage">
+                <button id="prevPage">Previous Page</button>
+                <button id="nextPage">Next Page</button>
+            </div>
+        </main>
+        <footer>
+            <div class="halfLeft">
+                <h6>About Us:</h6>
+                <ul>
+                    <li><a href="#About">About York Hiking</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li>
+                        <button id="colourBlindToggle">
+                            <i id="modeIcon" class="fas fa-sun">Toggle Theme</i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="halfRight">
+                <h6>Contact Us:</h6>
+                <p>
+                    <a href="mailto:connor.gill-mead@yorksj.ac.uk">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a
+                        href="https://www.facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </p>
+                <p><i class="fas fa-copyright"></i> Connor Gill-Mead 2024</p>
+            </div>
+        </footer>
+    </body>
+</html>
