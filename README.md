@@ -35,3 +35,6 @@ The project demonstrates server-side web development, relational database integr
 
 This project developed my understanding of full-stack web development, PHP server-side programming,
   relational databases and securely handling application configuration.
+
+
+![Hiking Retail Website](docs/hiking-website.png)
